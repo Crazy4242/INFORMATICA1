@@ -1,20 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby e Interessi</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .hobby-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+            padding: 48px 36px 36px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 340px;
+            max-width: 520px;
+        }
+        .hobby-title {
+            font-size: 2em;
+            color: #2a3b4c;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .hobby-desc {
+            color: #444;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .hobby-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 22px;
+            width: 100%;
+        }
+        .hobby-list li {
+            background: #f4f8fb;
+            margin: 8px 0;
+            padding: 10px 18px;
+            border-radius: 12px;
+            color: #2a3b4c;
+            font-size: 1.05em;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 32px;
+            background: linear-gradient(90deg, #4f8cff 0%, #38e4ae 100%);
+            color: #fff;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 32px;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.13s;
+        }
+        .back-btn:hover {
+            background: linear-gradient(90deg, #38e4ae 0%, #4f8cff 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hobby e Interessi</h1>
-    <p>Oltre all'informatica, ho molte passioni che arricchiscono il mio tempo libero:</p>
-    <ul>
-        <li><strong>Sport:</strong> [Il tuo sport preferito]</li>
-        <li><strong>Musica:</strong> Ascolto vari generi e suono [strumento musicale, se applicabile]</li>
-        <li><strong>Lettura:</strong> Mi piace leggere libri di tecnologia, romanzi e saggi</li>
-        <li><strong>Viaggi:</strong> Amo scoprire nuovi luoghi e culture</li>
-        <li><strong>Videogiochi:</strong> Mi diverto con giochi di strategia e avventura</li>
-    </ul>
-    <a href="menu.html">Torna al menu</a>
+    <div class="hobby-box">
+        <div class="hobby-title">Hobby e Interessi</div>
+        <div class="hobby-desc">Oltre all'informatica, ho molte passioni che arricchiscono il mio tempo libero:</div>
+        <ul class="hobby-list">
+            <li><strong>Sport:</strong> [Il tuo sport preferito]</li>
+            <li><strong>Musica:</strong> Ascolto vari generi e suono [strumento musicale, se applicabile]</li>
+            <li><strong>Lettura:</strong> Mi piace leggere libri di tecnologia, romanzi e saggi</li>
+            <li><strong>Viaggi:</strong> Amo scoprire nuovi luoghi e culture</li>
+            <li><strong>Videogiochi:</strong> Mi diverto con giochi di strategia e avventura</li>
+        </ul>
+        <a class="back-btn" href="menu.html">Torna al menu</a>
+    </div>
 </body>
 </html>

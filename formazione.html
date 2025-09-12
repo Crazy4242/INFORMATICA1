@@ -1,18 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formazione</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .form-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+            padding: 48px 36px 36px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 340px;
+            max-width: 520px;
+        }
+        .form-title {
+            font-size: 2em;
+            color: #2a3b4c;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .form-desc {
+            color: #444;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .form-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 22px;
+            width: 100%;
+        }
+        .form-list li {
+            background: #f4f8fb;
+            margin: 8px 0;
+            padding: 10px 18px;
+            border-radius: 12px;
+            color: #2a3b4c;
+            font-size: 1.05em;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 32px;
+            background: linear-gradient(90deg, #4f8cff 0%, #38e4ae 100%);
+            color: #fff;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 32px;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.13s;
+        }
+        .back-btn:hover {
+            background: linear-gradient(90deg, #38e4ae 0%, #4f8cff 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+    </style>
 </head>
 <body>
-    <h1>Formazione</h1>
-    <p>Il mio percorso di studi si è concentrato principalmente sull'informatica e sulle materie scientifiche. Ho frequentato:</p>
-    <ul>
-        <li><strong>Scuola superiore:</strong> [Nome scuola superiore], indirizzo [indirizzo di studi]</li>
-        <li><strong>Università:</strong> [Nome università], corso di laurea in [corso di laurea]</li>
-        <li><strong>Corsi extra:</strong> Ho partecipato a corsi online e workshop su programmazione, sviluppo web e nuove tecnologie.</li>
-    </ul>
-    <a href="menu.html">Torna al menu</a>
+    <div class="form-box">
+        <div class="form-title">Formazione</div>
+        <div class="form-desc">Il mio percorso di studi si è concentrato principalmente sull'informatica e sulle materie scientifiche. Ho frequentato:</div>
+        <ul class="form-list">
+            <li><strong>Scuola superiore:</strong> [Nome scuola superiore], indirizzo [indirizzo di studi]</li>
+            <li><strong>Università:</strong> [Nome università], corso di laurea in [corso di laurea]</li>
+            <li><strong>Corsi extra:</strong> Ho partecipato a corsi online e workshop su programmazione, sviluppo web e nuove tecnologie.</li>
+        </ul>
+        <a class="back-btn" href="menu.html">Torna al menu</a>
+    </div>
 </body>
 </html>
