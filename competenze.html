@@ -1,11 +1,14 @@
 
+<!-- Pagina Competenze: mostra le abilità tecniche e trasversali -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Competenze</title>
+    <!-- Stili CSS per layout e grafica -->
     <style>
+        /* Impostazioni generali della pagina */
         body {
             min-height: 100vh;
             margin: 0;
@@ -15,6 +18,7 @@
             justify-content: center;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
+        /* Box centrale per i contenuti */
         .skills-box {
             background: #fff;
             border-radius: 18px;
@@ -26,18 +30,21 @@
             min-width: 340px;
             max-width: 520px;
         }
+        /* Titolo principale */
         .skills-title {
             font-size: 2em;
             color: #2a3b4c;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
+        /* Descrizione */
         .skills-desc {
             color: #444;
             font-size: 1.1em;
             text-align: center;
             margin-bottom: 18px;
         }
+        /* Lista delle competenze */
         .skills-list {
             list-style: none;
             padding: 0;
@@ -52,6 +59,7 @@
             color: #2a3b4c;
             font-size: 1.05em;
         }
+        /* Bottone per tornare al menu */
         .back-btn {
             display: inline-block;
             margin-top: 10px;
@@ -74,15 +82,20 @@
     </style>
 </head>
 <body>
+    <!-- Box centrale con tutte le informazioni -->
     <div class="skills-box">
+        <!-- Titolo -->
         <div class="skills-title">Competenze</div>
+        <!-- Descrizione generale -->
         <div class="skills-desc">Durante il mio percorso ho acquisito diverse competenze tecniche e trasversali:</div>
+        <!-- Lista delle competenze -->
         <ul class="skills-list">
             <li><strong>Linguaggi di programmazione:</strong> C, Python, HTML, CSS, JavaScript</li>
             <li><strong>Sistemi operativi:</strong> Windows, Linux</li>
             <li><strong>Problem solving</strong> e capacità di lavorare in gruppo</li>
             <li><strong>Comunicazione</strong> e spirito di iniziativa</li>
         </ul>
+        <!-- Bottone per tornare al menu principale -->
         <a class="back-btn" href="menu.html">Torna al menu</a>
     </div>
 </body>

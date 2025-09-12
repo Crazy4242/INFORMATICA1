@@ -1,11 +1,14 @@
 
+<!-- Pagina Hobby e Interessi: mostra passioni e attività nel tempo libero -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby e Interessi</title>
+    <!-- Stili CSS per layout e grafica -->
     <style>
+        /* Impostazioni generali della pagina */
         body {
             min-height: 100vh;
             margin: 0;
@@ -15,6 +18,7 @@
             justify-content: center;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
+        /* Box centrale per i contenuti */
         .hobby-box {
             background: #fff;
             border-radius: 18px;
@@ -26,18 +30,21 @@
             min-width: 340px;
             max-width: 520px;
         }
+        /* Titolo principale */
         .hobby-title {
             font-size: 2em;
             color: #2a3b4c;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
+        /* Descrizione */
         .hobby-desc {
             color: #444;
             font-size: 1.1em;
             text-align: center;
             margin-bottom: 18px;
         }
+        /* Lista degli hobby */
         .hobby-list {
             list-style: none;
             padding: 0;
@@ -52,6 +59,7 @@
             color: #2a3b4c;
             font-size: 1.05em;
         }
+        /* Bottone per tornare al menu */
         .back-btn {
             display: inline-block;
             margin-top: 10px;
@@ -74,9 +82,13 @@
     </style>
 </head>
 <body>
+    <!-- Box centrale con tutte le informazioni -->
     <div class="hobby-box">
+        <!-- Titolo -->
         <div class="hobby-title">Hobby e Interessi</div>
+        <!-- Descrizione generale -->
         <div class="hobby-desc">Oltre all'informatica, ho molte passioni che arricchiscono il mio tempo libero:</div>
+        <!-- Lista degli hobby -->
         <ul class="hobby-list">
             <li><strong>Sport:</strong> [Il tuo sport preferito]</li>
             <li><strong>Musica:</strong> Ascolto vari generi e suono [strumento musicale, se applicabile]</li>
@@ -84,6 +96,7 @@
             <li><strong>Viaggi:</strong> Amo scoprire nuovi luoghi e culture</li>
             <li><strong>Videogiochi:</strong> Mi diverto con giochi di strategia e avventura</li>
         </ul>
+        <!-- Bottone per tornare al menu principale -->
         <a class="back-btn" href="menu.html">Torna al menu</a>
     </div>
 </body>
