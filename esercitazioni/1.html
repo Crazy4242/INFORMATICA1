@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifica Profilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #d1d1d1;
+        }
+    .contenitore-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+    .gruppo-form {
+            margin-bottom: 15px;
+        }
+    .gruppo-form label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+    .gruppo-form input,
+    .gruppo-form select,
+    .gruppo-form textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    .gruppo-form input[type="file"] {
+            padding: 0;
+        }
+    .gruppo-genere {
+            margin-top: 10px;
+        }
+
+    .btn-invia {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenitore-form">
+        <h1>Modifica Profilo</h1>
+    <form>
+            <!-- Foto profilo -->
+            <div class="gruppo-form">
+                <label for="profile-photo">Foto Profilo</label>
+                <input type="file" id="profile-photo" name="profile-photo">
+            </div>
+
+            <!-- Nome -->
+            <div class="gruppo-form">
+                <label for="first-name">Nome</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Il tuo nome">
+            </div>
+
+            <div class="gruppo-form">
+                <label for="last-name">Cognome</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Il tuo cognome">
+            </div>
+
+            <!-- Genere -->
+            <div class="gruppo-form gruppo-genere">
+                <label>Genere</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Femmina</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Maschio</label>
+            </div>
+
+            <!-- Data di nascita -->
+            <div class="gruppo-form">
+                <label for="birth-date">Data di nascita</label>
+                <select id="month" name="month">
+                    <option value="01">Gennaio</option>
+                    <option value="02">Febbraio</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Aprile</option>
+                    <option value="05">Maggio</option>
+                    <option value="06">Giugno</option>
+                    <option value="07">Luglio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Settembre</option>
+                    <option value="10">Ottobre</option>
+                    <option value="11">Novembre</option>
+                    <option value="12">Dicembre</option>
+                </select>
+                <select id="day" name="day">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <!-- aggiungere altre opzioni per i giorni -->
+                </select>
+                <select id="year" name="year">
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <!-- aggiungere altri anni -->
+                </select>
+            </div>
+
+            <!-- Descrizione -->
+            <div class="gruppo-form">
+                <label for="about-you">Chi sei?</label>
+                <textarea id="about-you" name="about-you" rows="4" placeholder="Scrivi qualcosa su di te..."></textarea>
+            </div>
+
+            <!-- Sito web -->
+            <div class="gruppo-form">
+                <label for="web-url">URL del sito web</label>
+                <input type="url" id="web-url" name="web-url" placeholder="Es. https://www.example.com">
+            </div>
+
+            <div class="gruppo-form">
+                <label for="web-name">Nome del sito web</label>
+                <input type="text" id="web-name" name="web-name" placeholder="Nome del sito web">
+            </div>
+
+            <!-- Pulsante di invio -->
+            <button type="submit" class="btn-invia">Crea Profilo</button>
+        </form>
+    </div>
+
+</body>
+</html>
