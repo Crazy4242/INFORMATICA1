@@ -1,11 +1,11 @@
 
-
+<!-- Pagina Hobby e Interessi: mostra passioni e attività nel tempo libero -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formazione</title>
+    <title>Hobby e Interessi</title>
     <!-- Stili CSS per layout e grafica -->
     <style>
         /* Impostazioni generali della pagina */
@@ -19,7 +19,7 @@
             font-family: 'Segoe UI', Arial, sans-serif;
         }
         /* Box centrale per i contenuti */
-        .form-box {
+        .hobby-box {
             background: #fff;
             border-radius: 18px;
             box-shadow: 0 6px 32px rgba(0,0,0,0.12);
@@ -31,27 +31,27 @@
             max-width: 520px;
         }
         /* Titolo principale */
-        .form-title {
+        .hobby-title {
             font-size: 2em;
             color: #2a3b4c;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
         /* Descrizione */
-        .form-desc {
+        .hobby-desc {
             color: #444;
             font-size: 1.1em;
             text-align: center;
             margin-bottom: 18px;
         }
-        /* Lista delle tappe formative */
-        .form-list {
+        /* Lista degli hobby */
+        .hobby-list {
             list-style: none;
             padding: 0;
             margin-bottom: 22px;
             width: 100%;
         }
-        .form-list li {
+        .hobby-list li {
             background: #f4f8fb;
             margin: 8px 0;
             padding: 10px 18px;
@@ -75,6 +75,14 @@
             text-decoration: none;
             transition: background 0.2s, transform 0.13s;
         }
+        .exp-img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px rgba(79,140,255,0.13);
+        }
         .back-btn:hover {
             background: linear-gradient(90deg, #38e4ae 0%, #4f8cff 100%);
             transform: translateY(-2px) scale(1.03);
@@ -83,18 +91,21 @@
 </head>
 <body>
     <!-- Box centrale con tutte le informazioni -->
-    <div class="form-box">
+    <div class="hobby-box">
         <!-- Titolo -->
-        <div class="form-title">Formazione</div>
+        <div class="hobby-title">Hobby e Interessi</div>
         <!-- Descrizione generale -->
-        <div class="form-desc">Il mio percorso di studi si è concentrato principalmente sull'informatica e sulle materie scientifiche. Ho frequentato:</div>
-        <!-- Lista delle tappe formative -->
-        <ul class="form-list">
-            <li><strong>Scuola superiore:</strong> Erasmo Da Rotterdam Bollate, indirizzo Informatico.</li>
-            <li><strong>Università:</strong>Sto studiando per entrare al politecnico. Robotica E Automazione. </li>
-            <li><strong>Corsi extra:</strong> Ho partecipato a corsi di Robotica,Arduino e sulla stampante 3D organizzati dal professore Livraghi.</li>
-            <li><strong>Livello di inglese:</strong>B1 certificato da un esame Trinity. </li>
+        <div class="hobby-desc">Oltre all'informatica, ho molte passioni che arricchiscono il mio tempo libero:</div>
+        <!-- Lista degli hobby -->
+        <ul class="hobby-list">
+            <li><strong>Moto:</strong> RS125 2006- Cbr1000.</li>
+            <li><strong>Viaggi:</strong> Amo scoprire nuovi luoghi e culture, specialmente latino americane.</li>
+            <li><strong>Videogiochi:</strong> Mi diverto con giochi di strategia e avventura come R6.</li>
         </ul>
+        <img class="exp-img" src="Rs125.png" alt="Rs125">
+        <img class="exp-img" src="Cbr1000.png" alt="Cbr1000">
+        <img class="exp-img" src="Latinoamerica.png" alt="Latina America">
+        <img class="exp-img" src="R6.png" alt="R6">
         <!-- Bottone per tornare al menu principale -->
         <a class="back-btn" href="menu.html">Torna al menu</a>
     </div>
