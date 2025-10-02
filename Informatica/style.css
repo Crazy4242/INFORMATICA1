@@ -1,0 +1,28 @@
+#box1 { width: 200px;
+		height: 150px;
+		overfow: visible;
+		border: 2px solid black;
+		background: aqua;
+		margin-bottom: 50px;
+		}
+
+#box2 { width: 200px;
+		height: 150px;
+		overfow: auto;
+		border: 2px solid black;
+		background: silver;
+		}
+
+#box3 { width: 200px;
+		height: 150px;
+		overfow: scroll;
+		border: 2px solid black;
+		background: teal;
+		}
+
+#box4 { width: 200px;
+		height: 150px;
+		overfow: hidden;
+		border: 2px solid black;
+		background: olive;
+		}

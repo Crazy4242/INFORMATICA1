@@ -1,0 +1,71 @@
+/* Stile generale della pagina */
+body {
+    font-family: Arial, sans-serif; /* Font leggibile */
+    background-color: #f0f0f0;      /* Colore di sfondo neutro */
+    margin: 0;                      /* Nessun margine esterno */
+    padding: 40px;                  /* Spazio interno attorno al contenitore */
+}
+
+/* Box principale del form */
+.contenitore-form {
+    background-color: #fff;              /* Sfondo bianco per il form */
+    border-radius: 10px;                 /* Angoli arrotondati */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* Ombra per effetto sollevato */
+    max-width: 500px;                    /* Larghezza massima del box */
+    margin: auto;                        /* Centra il box orizzontalmente */
+    padding: 30px;                       /* Spazio interno (padding) */
+    border: 2px solid #4CAF50;           /* Bordo verde attorno al form */
+}
+
+/* Ogni gruppo di input del form */
+.gruppo-form {
+    margin-bottom: 20px;         /* Spazio sotto ogni gruppo */
+    padding: 10px;               /* Spazio interno al gruppo */
+    border: 1px solid #ddd;      /* Bordo grigio chiaro */
+    border-radius: 6px;          /* Angoli arrotondati */
+    background: #f9f9f9;         /* Sfondo leggermente grigio */
+}
+
+/* Etichette degli input */
+.gruppo-form label {
+    display: block;          /* Etichetta su riga propria */
+    font-weight: bold;       /* Testo in grassetto */
+    margin-bottom: 8px;      /* Spazio sotto l'etichetta */
+}
+
+/* Input, select e textarea con box model */
+.gruppo-form input,
+.gruppo-form select,
+.gruppo-form textarea {
+    width: 100%;                /* Larghezza piena del gruppo */
+    padding: 8px;               /* Spazio interno all'input */
+    margin-bottom: 6px;         /* Spazio sotto l'input */
+    border: 1px solid #ccc;     /* Bordo grigio chiaro */
+    border-radius: 4px;         /* Angoli arrotondati */
+    box-sizing: border-box;     /* Include padding e bordo nella larghezza */
+}
+
+/* Gruppo per la scelta del genere */
+.gruppo-genere {
+    display: flex;          /* Disposizione orizzontale */
+    gap: 20px;              /* Spazio tra le opzioni */
+    align-items: center;    /* Allinea verticalmente al centro */
+}
+
+/* Pulsante di invio */
+.btn-invia {
+    background-color: #4CAF50; /* Verde di sfondo */
+    color: white;              /* Testo bianco */
+    padding: 12px 0;           /* Spazio verticale nel bottone */
+    border: none;              /* Nessun bordo */
+    border-radius: 6px;        /* Angoli arrotondati */
+    font-size: 18px;           /* Testo grande */
+    cursor: pointer;           /* Cursore a mano */
+    width: 100%;               /* Bottone largo quanto il form */
+    margin-top: 10px;          /* Spazio sopra il bottone */
+}
+
+/* Effetto hover sul pulsante */
+.btn-invia:hover {
+    background-color: #388e3c; /* Verde più scuro al passaggio mouse */
+}
